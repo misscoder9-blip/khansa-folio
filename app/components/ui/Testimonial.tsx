@@ -205,14 +205,14 @@ export default function Testimonial({ testimonials, autoPlayInterval = 5000 }: T
 
     <div className="flex flex-col items-start">
       <p
-        className="text-[20px] font-bold text-[#070707]"
+        className="text-[20px] ft-s font-bold text-[#070707]"
         style={{ fontFamily: 'var(--font-satoshi)' }}
       >
         {t.name}
       </p>
 
       <p className="text-[#ff805e]" style={{ fontFamily: 'var(--font-satoshi)' }}>
-        <span className="text-[16px] font-medium">{t.positionNormal} </span>
+        <span className="text-[16px] ft-s font-medium">{t.positionNormal} </span>
         <span
           className="text-[16px] italic font-semibold"
           style={{ fontFamily: 'var(--font-playfair)' }}

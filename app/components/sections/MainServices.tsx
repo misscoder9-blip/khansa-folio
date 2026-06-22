@@ -299,7 +299,8 @@ lg:shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden relative ${className}`}
         fill
         // className="object-cover object-top"
         // object-contain
-        className="   object-center w-full h-full"
+        className="    object-fill w-full h-full"
+        //  className="   object-center object-contain w-full h-full"
         // sizes="560px"
         sizes= "100vw"
       />
@@ -582,7 +583,9 @@ function MobileStackedServices() {
             </div>
 
             {/* Preview card */}
-            <PreviewCard s={svc} className="h-[240px]" />
+            {/* <PreviewCard s={svc} className="h-[240px]" /> */}
+            <PreviewCard s={svc} className=" w-full h-[380px] sm:h-[480px]" />
+
 
             {i < SERVICES.length - 1 && (
               <div className="my-10 h-px bg-[#e0e2e5]" />

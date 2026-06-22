@@ -195,7 +195,7 @@ export default function Footer() {
                   icon="email"
                   platform="Email"
                   handle="Khunsa.nomani"
-                  href="mailto:khunsa.nomani@example.com"
+                  href="mailto:khunsa.nomani@gmail.com"
                   iconBgColor="#EA4335"
                 />
                 <div className="border-t border-dashed border-[#5F6266] w-full"></div>
@@ -203,7 +203,7 @@ export default function Footer() {
                   icon="linkedin"
                   platform="LinkedIn"
                   handle="Khansa ✪‌"
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/khunsa-nomani/"
                   iconBgColor="#0A66C2"
                 />
                 <div className="border-t border-dashed border-[#5F6266] w-full"></div>
@@ -211,7 +211,7 @@ export default function Footer() {
                   icon="behance"
                   platform="Behance"
                   handle="Khunsa ✪‌ Abdul Rasheed"
-                  href="https://behance.net"
+                  href="https://www.behance.net/khunsanomani"
                   iconBgColor="#1769FF"
                 />
                 <div className="border-t border-dashed border-[#5F6266] w-full"></div>
@@ -227,7 +227,7 @@ export default function Footer() {
                   icon="dribbble"
                   platform="Dribble"
                   handle="Khunsa Nomani"
-                  href="https://dribbble.com"
+                  href=" https://dribbble.com/Jvkhunsa"
                   iconBgColor="#EA4C89"
                 />
                 <div className="border-t border-dashed border-[#5F6266] w-full"></div>
@@ -235,7 +235,7 @@ export default function Footer() {
                   icon="contra"
                   platform="Contra"
                   handle="Khunsa Nomani"
-                  href="https://contra.com"
+                  href="https://contra.com/khunsa_nomani/work?r=khunsa_nomani"
                   iconBgColor="#000000"
                 />
               </div>

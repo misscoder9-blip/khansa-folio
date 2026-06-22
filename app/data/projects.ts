@@ -1204,10 +1204,10 @@ const projects: ProjectData[] = [
     },
   },
   {
-    slug: "petlays",
-    title: "PetLays",
+    slug: "interview bu...",
+    title: "interview bu...",
     description:
-      "From structured interview practice to performance insights, it helps users prepare with clarity, confidence, and measurable progress across every session.",
+      "From structured interview practice to performance insights, it helps users prepare with clarity and measurable progress.",
     year: "2023",
     client: "Pakistan",
     type: "Web Application",
