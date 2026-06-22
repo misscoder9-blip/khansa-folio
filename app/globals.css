@@ -145,3 +145,9 @@
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+
+@media (max-width: 370px) {
+  .ft-s {
+    font-size: 14px;
+  }
+}
