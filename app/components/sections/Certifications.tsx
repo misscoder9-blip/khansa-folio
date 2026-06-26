@@ -34,7 +34,7 @@ const certifications: Certification[] = [
   },
   {
     id: 3,
-    title: 'Experience letter Xwave',
+    title: 'Experience letter\n Xwave',
     year: '2025',
     issuer: 'xWave',
     logo: '/assets/images/xwave-icon.svg',
@@ -61,7 +61,7 @@ const certifications: Certification[] = [
   },
   {
     id: 6,
-    title: 'Graphic Design Certificate',
+    title: 'Graphic Design\nCertificate',
     year: '2022',
     issuer: 'DigiSkills',
     logo: '/assets/images/digiskill-icon.svg',
@@ -79,7 +79,7 @@ const certifications: Certification[] = [
   },
   {
     id: 8,
-    title: 'Experience letter VAASEL',
+    title: 'Experience letter\nVAASEL',
     year: '2023',
     issuer: 'VAASEL',
     logo: '/assets/images/vaasal-icon.svg',
@@ -368,13 +368,24 @@ export default function Certifications() {
               {/* Bottom Content - Desktop */}
               <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
                 {/* Title */}
-                <p
+                {/* <p
                   className="text-2xl font-medium text-[#303030] leading-tight max-w-[285px]"
                   style={{ fontFamily: 'var(--font-satoshi)' }}
                 >
                   {cert.title}
-                </p>
+                </p> */}
 
+<p
+  className="text-[22px] font-medium text-[#303030] leading-tight max-w-[285px]"
+  style={{ fontFamily: 'var(--font-satoshi)' }}
+>
+  {cert.title.split('\n').map((line, i) => (
+    <React.Fragment key={i}>
+      {line}
+      {i < cert.title.split('\n').length - 1 && <br />}
+    </React.Fragment>
+  ))}
+</p>
                 {/* CTA Button */}
                 <a
                   href={cert.credentialUrl}
