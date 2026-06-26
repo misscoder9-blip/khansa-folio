@@ -132,7 +132,7 @@ export default function Header() {
           {/* Hire Me Button */}
           <button
             onClick={() => scrollToSection("contact")}
-            className="bg-[#070707] text-white rounded-[24px] px-5 py-1.5 text-[15px] font-medium shadow-[0px_4px_12px_rgba(0,0,0,0.15)] hover:bg-black transition-all duration-200 hidden md:flex items-center justify-center whitespace-nowrap hover:shadow-[0px_6px_16px_rgba(0,0,0,0.2)]"
+            className="bg-[#070707] text-white rounded-[24px] px-5 py-2.5 text-[15px] font-medium shadow-[0px_4px_12px_rgba(0,0,0,0.15)] hover:bg-black transition-all duration-200 hidden md:flex items-center justify-center whitespace-nowrap hover:shadow-[0px_6px_16px_rgba(0,0,0,0.2)]"
           >
             Hire Me
           </button>
