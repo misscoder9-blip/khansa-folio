@@ -29,20 +29,23 @@ export default function StatsCard({
         {/* <div className="relative flex items-center justify-between"> */}
         {/* 1st change */}
         {/* <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-0"> */}
-        <div className="relative flex flex-col md:flex-row items-center md:items-center justify-between gap-4  md:gap-0">
+        {/* <div className="relative flex flex-col lg:flex-row items-center lg:items-center justify-between gap-4 lg:gap-0"> */}
           {/* Years of Experience */}
+          <div className="relative flex  flex-row items-center lg:items-center justify-between gap-4 lg:gap-0">
           {/* <div className="flex flex-col gap-3"> */}
           {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left"> */}
-          <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left">
+          {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left"> */}
+          {/* <div className="flex flex-col gap-3 w-full lg:w-auto items-center lg:items-start text-center lg:text-left"> */}
+          <div className="flex flex-col gap-3 w-full lg:w-auto items-start  text-start text-left sm:pl-3 lg:pl-6 pb-3">
             <p
               className="text-[36px] md:text-[48px] font-black italic text-[#ff805e] leading-normal tracking-[-1.08px] md:tracking-[-1.44px]"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               {yearsOfExperience}+
             </p>
-            <div className="flex flex-col gap-[6px]">
+            <div className="flex flex-col gap-[6px] text-start text-left">
               <p
-                className="text-[18px] md:text-[24px] text-white leading-normal whitespace-nowrap"
+                className=" ft-exp text-[18px] md:text-[24px] text-white leading-normal whitespace-nowrap text-start text-left"
                 style={{ fontFamily: "var(--font-satoshi)" }}
               >
                 Year of{" "}
@@ -53,7 +56,7 @@ export default function StatsCard({
                   experience
                 </span>
               </p>
-              <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Designing thoughtful and scalable digital experiences.</p>
+              {/* <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Designing thoughtful and scalable digital experiences.</p> */}
             </div>
           </div>
 
@@ -61,21 +64,22 @@ export default function StatsCard({
           {/* <div className="h-[80px] md:h-[107px] w-0 border-l border-dotted border-gray-600"></div> */}
           {/* <div className="hidden md:block h-[107px] w-0 border-l border-dotted border-gray-600"></div> */}
           {/* <div className="w-full md:w-0 h-0 md:h-[107px] border-t md:border-t-0 md:border-l border-dotted border-gray-600"></div> */}
-          <div className="w-full md:w-0 h-[5px] md:h-[107px] border-t md:border-t-0 md:border-l border-dotted border-gray-600"></div>
+          {/* <div className="w-full md:w-0 h-[5px] md:h-[107px] border-t md:border-t-0 md:border-l border-dotted border-gray-600"></div> */}
+          <div className="h-[80px] md:h-[107px] w-0 border-l border-dotted border-gray-600"></div>
 
           {/* Projects Completed */}
           {/* <div className="flex flex-col gap-3 pl-5 md:pl-6"> */}
           {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left pl-0 md:pl-6"> */}
-          <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left lg:pl-6 sm: pb-3">
+          <div className="flex flex-col gap-3 w-full md:w-auto  items-start  text-start  text-left lg:pl-6 sm:pl-3 sm: pb-3">
             <p
-              className="text-[36px] md:text-[48px] font-black italic text-[#ff805e] leading-normal tracking-[-1.08px] md:tracking-[-1.44px]"
+              className="text-[36px] md:text-[48px] font-black italic text-[#ff805e] text-start  text-left leading-normal tracking-[-1.08px] md:tracking-[-1.44px]"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               {projectsCompleted}+
             </p>
             <div className="flex flex-col gap-[6px]">
               <p
-                className="text-[18px] md:text-[24px] text-white leading-normal whitespace-nowrap"
+                className=" ft-exp text-[18px] md:text-[24px] text-white leading-normal whitespace-nowrap text-start  text-left"
                 style={{ fontFamily: "var(--font-satoshi)" }}
               >
                 Project{" "}
@@ -86,7 +90,7 @@ export default function StatsCard({
                   completed
                 </span>
               </p>
-              <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Across websites, mobile apps, dashboards, and platforms.</p>
+              {/* <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Across websites, mobile apps, dashboards, and platforms.</p> */}
             </div>
           </div>
         </div>
