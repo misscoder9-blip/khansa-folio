@@ -56,8 +56,37 @@ const logoRows: { logos: LogoItem[]; direction: "ltr" | "rtl" }[] = [
 
 function StatCard({ stat }: { stat: StatData }) {
   return (
-    <div className="bg-white rounded-[14px] h-[120px] md:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col justify-start">
-      <h3 className="text-[22px] md:text-[36px] font-bold leading-tight">
+    <div className="bg-white rounded-[14px] h-[120px] md:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col  justify-between align-bottom ">
+      {/* <h3 className="text-[22px] md:text-[36px] font-bold leading-tight">
+        <span
+          className="text-[#070707]"
+          style={{ fontFamily: "var(--font-satoshi)" }}
+        >
+          {stat.headline}
+        </span>
+        {stat.headlineSuffix && (
+          <span
+            className="text-[#ff805e] font-black"
+            style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
+          >
+            {stat.headlineSuffix}
+          </span>
+        )}
+      </h3> */}
+      {/* <p
+        className="text-[12px] md:text-[14px] font-medium text-[#070707] mt-0.5"
+        style={{ fontFamily: "var(--font-satoshi)" }}
+      >
+        {stat.label}
+      </p>
+      <p
+        className="text-[11px] md:text-[14px] text-[#5f6266] leading-relaxed mt-auto"
+        style={{ fontFamily: "var(--font-satoshi)" }}
+      >
+        {stat.description}
+      </p> */}
+      <div className="flex flex-row items-center justify-between gap-2 md:flex-col md:items-start">
+        <h3 className="text-[22px] md:text-[36px] font-bold leading-tight">
         <span
           className="text-[#070707]"
           style={{ fontFamily: "var(--font-satoshi)" }}
@@ -73,18 +102,23 @@ function StatCard({ stat }: { stat: StatData }) {
           </span>
         )}
       </h3>
-      <p
-        className="text-[12px] md:text-[14px] font-medium text-[#070707] mt-0.5"
-        style={{ fontFamily: "var(--font-satoshi)" }}
-      >
-        {stat.label}
-      </p>
-      <p
-        className="text-[11px] md:text-[14px] text-[#5f6266] leading-relaxed mt-auto"
-        style={{ fontFamily: "var(--font-satoshi)" }}
-      >
-        {stat.description}
-      </p>
+  <p
+    className="text-[12px] md:text-[14px] font-medium text-[#070707]"
+    style={{ fontFamily: "var(--font-satoshi)" }}
+  >
+    {stat.label}
+  </p>
+
+ 
+</div>
+<div>
+    <p
+    className="text-[11px] md:text-[14px] text-[#5f6266] leading-relaxed "
+    style={{ fontFamily: "var(--font-satoshi)" }}
+  >
+    {stat.description}
+  </p>
+</div>
     </div>
   );
 }
@@ -102,8 +136,8 @@ function LogoMarquee({
 
   return (
     <div className="overflow-hidden w-full h-[120px] md:h-[161px]">
-      <div
-        className="marquee-track flex gap-[9px] h-full"
+      {/* <div
+        className="marquee-track flex gap-[9px] sm:gap[30px] h-full"
         style={{
           width: "200%",
           animation: `marquee-${direction} 18s linear infinite`,
@@ -123,7 +157,29 @@ function LogoMarquee({
             />
           </div>
         ))}
-      </div>
+      </div> */}
+
+      <div
+  className="marquee-track flex   lg:gap-[9px]  gap-[18px]  h-full w-[300%] sm:w-[200%]"
+  style={{
+    animation: `marquee-${direction} 18s linear infinite`,
+  }}
+>
+  {track.map((logo, i) => (
+    <div
+      key={i}
+      className="flex-1 bg-white rounded-[14px] flex items-center justify-center h-full"
+    >
+      <Image
+        src={logo.logo}
+        alt={logo.name}
+        width={logo.imageWidth}
+        height={logo.imageHeight}
+        className="object-contain"
+      />
+    </div>
+  ))}
+</div>
     </div>
   );
 }
