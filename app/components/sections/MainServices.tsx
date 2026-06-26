@@ -299,8 +299,8 @@ lg:shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden relative ${className}`}
         fill
         // className="object-cover object-top"
         // object-contain
-        className="    object-fill w-full h-full"
-        //  className="   object-center object-contain w-full h-full"
+        // className="    object-fill w-full h-full"
+         className="   object-center object-contain  w-full h-full"
         // sizes="560px"
         sizes= "100vw"
       />
@@ -308,6 +308,31 @@ lg:shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden relative ${className}`}
   );
 }
 
+// function PreviewCard({ s, className = '' }: { s: Service; className?: string }) {
+//   const isGif = s.preview.image.toLowerCase().endsWith('.gif');
+//   return (
+//     <div
+//       className={`bg-[#070707] rounded-[9px] lg:rounded-[14px] border-[3px] lg:border-[5px] border-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] lg:shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden relative ${className}`}
+//     >
+//       {isGif ? (
+//         // eslint-disable-next-line @next/next/no-img-element
+//         <img
+//           src={s.preview.image}
+//           alt={s.preview.title}
+//           className="absolute inset-0 w-full h-full object-contain object-top"
+//         />
+//       ) : (
+//         <Image
+//           src={s.preview.image}
+//           alt={s.preview.title}
+//           fill
+//           className="object-contain object-top"
+//           sizes="100vw"
+//         />
+//       )}
+//     </div>
+//   );
+// }
 // ─── Desktop: Sticky-scroll cycling ──────────────────────────────────────────
 
 function DesktopStickyServices() {
