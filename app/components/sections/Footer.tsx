@@ -72,7 +72,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#070707] text-white py-16 px-4 sm:px-6 lg:py-0 lg:px-0 relative overflow-hidden">
+    <footer className="bg-[#070707] text-white py-0 px-4 sm:px-6 lg:py-0 lg:px-0 relative overflow-hidden">
       <div className="hidden lg:block">
         <div className="max-w-[1440px] mx-auto">
           <div className="grid grid-cols-3">
@@ -291,8 +291,8 @@ export default function Footer() {
         </div>
 
         {/* Mobile Greetings */}
-        <div className="overflow-hidden py-4">
-          <div className="flex gap-24 animate-scroll whitespace-nowrap" style={{ width: 'max-content' }}>
+        <div className="overflow-hidden py-2 leading-none">
+          <div className="flex gap-24 animate-scroll whitespace-nowrap leading-none" style={{ width: 'max-content' }}>
             {[...greetings, ...greetings, ...greetings].map((greeting, index) => (
               <p
                 key={index}
