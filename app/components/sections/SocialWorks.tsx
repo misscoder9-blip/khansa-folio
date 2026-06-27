@@ -882,7 +882,7 @@ function LinkedInPostCard({
       {/* Post Text */}
       <div className="px-[5px] md:px-[10px] mb-[5px] md:mb-[9px]">
         <p
-          className="text-[4px] md:text-[8px] text-[#191919] leading-normal"
+          className="text-[8px] md:text-[8px] text-[#191919] leading-normal"
           style={{ fontFamily: "var(--font-satoshi)" }}
         >
           {text}
