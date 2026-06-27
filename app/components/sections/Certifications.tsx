@@ -255,10 +255,17 @@ export default function Certifications() {
               <div className="absolute top-3 left-0 right-0 px-2.5 flex items-start justify-between w">
                 {/* Title */}
                 <p
-                  className="text-[12px] font-medium text-white leading-tight max-w-[130px]"
+                  className="text-[12px] font-medium text-white leading-tight max-w-[150px]"
                   style={{ fontFamily: 'var(--font-satoshi)' }}
                 >
-                  {cert.title}
+                  {/* {cert.title} */}
+                  
+  {cert.title.split('\n').map((line, i) => (
+    <React.Fragment key={i}>
+      {line}
+      {i < cert.title.split('\n').length - 1 && <br />}
+    </React.Fragment>
+  ))}
                 </p>
 
                 {/* Arrow Button */}
@@ -311,6 +318,7 @@ export default function Certifications() {
                   fill
                   className="object-contain rounded-sm"
                 />
+                
               </div>
             </div>
 

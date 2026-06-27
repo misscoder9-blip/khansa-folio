@@ -7,6 +7,9 @@ interface LogoItem {
   name: string;
   imageWidth: number;
   imageHeight: number;
+  // mobileWidth: number;
+  // mobileHeight: number;
+  
 }
 
 interface StatData {
@@ -38,8 +41,14 @@ const stats: StatData[] = [
 const logoRows: { logos: LogoItem[]; direction: "ltr" | "rtl" }[] = [
   {
     logos: [
-      { logo: "/assets/icons/myclients/Logo-Selexi.svg", name: "Selexi", imageWidth: 120, imageHeight: 64 },
-      { logo: "/assets/icons/myclients/Logo-Zaveur.svg", name: "Zaveur", imageWidth: 155, imageHeight: 42 },
+  //     { logo: "/assets/icons/myclients/Logo-Selexi.svg", name: "Selexi", imageWidth: 120, imageHeight: 64,  mobileWidth: 100,
+  // mobileHeight: 26, },
+  //     { logo: "/assets/icons/myclients/Logo-Zaveur.svg", name: "Zaveur", imageWidth: 155, imageHeight: 42, mobileWidth: 100,
+  // mobileHeight: 26, },
+   { logo: "/assets/icons/myclients/Logo-Selexi.svg", name: "Selexi", imageWidth: 120, imageHeight: 64,
+ },
+      { logo: "/assets/icons/myclients/Logo-Zaveur.svg", name: "Zaveur", imageWidth: 155, imageHeight: 42,
+ },
       { logo: "/assets/icons/myclients/Logo-Leebai.svg", name: "LeebAI", imageWidth: 145, imageHeight: 50 },
     ],
     direction: "ltr",
@@ -56,7 +65,9 @@ const logoRows: { logos: LogoItem[]; direction: "ltr" | "rtl" }[] = [
 
 function StatCard({ stat }: { stat: StatData }) {
   return (
-    <div className="bg-white rounded-[14px] h-[120px] md:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col  justify-between align-bottom ">
+    // <div className="bg-white rounded-[14px] h-[120px] md:h-[104px] sm:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col  justify-between align-bottom ">
+     <div className="bg-white rounded-[14px] h-[104px] md:h-[165px] lg:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col  justify-between align-bottom ">
+
       {/* <h3 className="text-[22px] md:text-[36px] font-bold leading-tight">
         <span
           className="text-[#070707]"
@@ -160,7 +171,7 @@ function LogoMarquee({
       </div> */}
 
       <div
-  className="marquee-track flex   lg:gap-[9px]  gap-[18px]  h-full w-[300%] sm:w-[200%]"
+  className="marquee-track flex   lg:gap-[9px]  gap-[46px]  h-full lg:w-[200%] w-[310%]  gap-[10px]"
   style={{
     animation: `marquee-${direction} 18s linear infinite`,
   }}
@@ -168,15 +179,30 @@ function LogoMarquee({
   {track.map((logo, i) => (
     <div
       key={i}
-      className="flex-1 bg-white rounded-[14px] flex items-center justify-center h-full"
+      className="flex-1 lg:bg-white md:bg-white sm-bg-none rounded-[14px] flex items-center justify-center h-full"
     >
-      <Image
+      {/* <Image
         src={logo.logo}
         alt={logo.name}
         width={logo.imageWidth}
         height={logo.imageHeight}
-        className="object-contain"
-      />
+        className="object-contain w-[120px] h-[60px] lg:w-auto lg:h-auto"
+      /> */}
+
+
+    
+
+<Image
+  src={logo.logo}
+  alt={logo.name}
+  width={logo.imageWidth}
+  height={logo.imageHeight}
+  className="object-contain"
+  // style={{
+  //   width: `${logo.mobileWidth}px`,
+  //   height: `${logo.mobileHeight}px`,
+  // }}
+/>
     </div>
   ))}
 </div>
