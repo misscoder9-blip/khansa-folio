@@ -57,6 +57,8 @@ export default function StatsCard({
                 </span>
               </p>
               {/* <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Designing thoughtful and scalable digital experiences.</p> */}
+                <p className=" hidden lg:block  text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Designing thoughtful and scalable digital experiences.</p> 
+
             </div>
           </div>
 
@@ -91,6 +93,9 @@ export default function StatsCard({
                 </span>
               </p>
               {/* <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Across websites, mobile apps, dashboards, and platforms.</p> */}
+              <p className="hidden lg:block text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">
+  Across websites, mobile apps, dashboards, and platforms.
+</p>
             </div>
           </div>
         </div>
