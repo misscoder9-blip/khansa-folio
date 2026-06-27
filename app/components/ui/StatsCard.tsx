@@ -36,7 +36,7 @@ export default function StatsCard({
           {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left"> */}
           {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left"> */}
           {/* <div className="flex flex-col gap-3 w-full lg:w-auto items-center lg:items-start text-center lg:text-left"> */}
-          <div className="flex flex-col gap-3 w-full lg:w-auto items-start  text-start text-left sm:pl-3 lg:pl-6 pb-3">
+          <div className="flex flex-col gap-3 w-full lg:w-auto items-start  text-start text-left sm:pl-3 lg:pl-2 pb-3">
             <p
               className="text-[36px] md:text-[48px] font-black italic text-[#ff805e] leading-normal tracking-[-1.08px] md:tracking-[-1.44px]"
               style={{ fontFamily: "var(--font-playfair)" }}
@@ -94,7 +94,7 @@ export default function StatsCard({
               </p>
               {/* <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Across websites, mobile apps, dashboards, and platforms.</p> */}
               <p className="hidden lg:block text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">
-  Across websites, mobile apps, dashboards, and platforms.
+  Across websites, mobile apps, dashboards, <br /> and platforms.
 </p>
             </div>
           </div>
