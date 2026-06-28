@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/app/components/sections/Header";
 import Footer from "@/app/components/sections/Footer";
 import ScrollToTop from "@/app/components/ScrollToTop";
+import AnimatedCard from "./components/sections/AnimatedCard";
 
 // Default font - Satoshi
 const satoshi = localFont({
@@ -50,6 +51,10 @@ export const metadata: Metadata = {
   title: "Khansafolio - UI/UX Designer Portfolio",
   description:
     "Creating beautiful and purposeful digital experiences that blend creativity with strategy.",
+    icons: {
+    icon: "/assets/images/khunsaprof2.png",
+    apple:  "/assets/images/khunsaprof2.png",
+  },
 };
 
 export default function RootLayout({
@@ -63,6 +68,7 @@ export default function RootLayout({
       className={`${satoshi.variable} ${craftworkGrotesk.variable} ${playfairDisplay.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-[#F8F9FA] transition-colors antialiased" style={{ fontFamily: 'var(--font-satoshi)' }}>
+        <AnimatedCard/>
         <ScrollToTop />
         <Header />
         <main className="flex-1">{children}</main>
