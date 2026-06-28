@@ -142,7 +142,7 @@ export default function Footer() {
 
                   {/* Hire Card */}
                   <div className="flex-1 flex justify-center items-center">
-                    <UpworkCard href="https://upwork.com" />
+                    <UpworkCard href="https://www.upwork.com/freelancers/~0198fe9b5f983d0a5b?mp_source=share" />
                   </div>
                 </div>
               </div>
