@@ -73,24 +73,7 @@ export default function ProjectCard({
             </p>
           </div>
 
-          {/* <div className="space-y-0">
-            {[
-              ["Year", year],
-              ["Client", client],
-              ["Type", type],
-              ["Timeline", timeline],
-            ].map(([label, value]) => (
-              <div
-                key={label}
-                className="flex items-center justify-between py-[4.5px] border-b last:border-b-0 border-dotted border-gray-300"
-              >
-                <span className="text-[#5f6266] text-[10px] md:text-xs leading-5">
-                  {label}
-                </span>
-                <span className="text-[#070707] text-[10px] md:text-xs font-medium text-right leading-4">
-                  {value}
-                </span>
-              </div> */}
+        
 
               <div className="space-y-0">
   {[

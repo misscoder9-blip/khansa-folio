@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useRef } from 'react';
-import Image from 'next/image';
+import React, { useRef } from "react";
+import Image from "next/image";
 
 interface Certification {
   id: number;
@@ -16,75 +16,83 @@ interface Certification {
 const certifications: Certification[] = [
   {
     id: 1,
-    title: 'Google UX Design Professional Certificate',
-    year: '2023',
-    issuer: 'Google',
-    logo: '/assets/images/google-icon.svg',
-    certificateImage: '/assets/images/certificate.png',
-    credentialUrl: 'https://coursera.org/share/fa47cc0c944a4bc2edb86356242d5d86',
+    title: "Google UX Design Professional Certificate",
+    year: "2023",
+    issuer: "Google",
+    logo: "/assets/images/google-icon.svg",
+    certificateImage: "/assets/images/certificate.png",
+    credentialUrl:
+      "https://coursera.org/share/fa47cc0c944a4bc2edb86356242d5d86",
   },
   {
     id: 2,
-    title: 'Apprentship From Institute of emerging career unit',
-    year: '2023',
-    issuer: 'Institute of Emerging Careers',
-    logo: '/assets/images/iec-icon.svg',
-    certificateImage: '/assets/images/IEC-Certificate.png',
-    credentialUrl: 'https://drive.google.com/file/d/1g4h07i-kZr5yve9hG98ZXGhVZZFfTtEA/view?usp=drive_link',
+    title: "Apprentship From Institute of emerging career unit",
+    year: "2023",
+    issuer: "Institute of Emerging Careers",
+    logo: "/assets/images/iec-icon.svg",
+    certificateImage: "/assets/images/IEC-Certificate.png",
+    credentialUrl:
+      "https://drive.google.com/file/d/1g4h07i-kZr5yve9hG98ZXGhVZZFfTtEA/view?usp=drive_link",
   },
   {
     id: 3,
-    title: 'Experience letter\n Xwave',
-    year: '2025',
-    issuer: 'xWave',
-    logo: '/assets/images/xwave-icon.svg',
-    certificateImage: '/assets/images/X-wave-certificate.png',
-    credentialUrl: 'https://drive.google.com/file/d/1sYcT4-dC5GNeuo2sCbvEJNUTaIzRc9z_/view?usp=drive_link',
+    title: "Experience letter\n Xwave",
+    year: "2025",
+    issuer: "xWave",
+    logo: "/assets/images/xwave-icon.svg",
+    certificateImage: "/assets/images/X-wave-certificate.png",
+    credentialUrl:
+      "https://drive.google.com/file/d/1sYcT4-dC5GNeuo2sCbvEJNUTaIzRc9z_/view?usp=drive_link",
   },
   {
     id: 4,
-    title: 'Certificate of Experience Bytewise',
-    year: '2024',
-    issuer: 'Bytewise',
-    logo: '/assets/images/bytewise-icon.svg',
-    certificateImage: '/assets/images/bytwise-certifcate.png',
-    credentialUrl: 'https://certificate.givemycertificate.com/c/2e093b65-0a94-4ba6-875e-a5b0c7478057',
+    title: "Certificate of Experience Bytewise",
+    year: "2024",
+    issuer: "Bytewise",
+    logo: "/assets/images/bytewise-icon.svg",
+    certificateImage: "/assets/images/bytwise-certifcate.png",
+    credentialUrl:
+      "https://certificate.givemycertificate.com/c/2e093b65-0a94-4ba6-875e-a5b0c7478057",
   },
   {
     id: 5,
-    title: 'Certificate of Experience TechMiracle',
-    year: '2024',
-    issuer: 'Tech Miracle',
-    logo: '/assets/images/techmirical-icon.svg',
-    certificateImage: '/assets/images/techmiraclecertificate.png',
-    credentialUrl: 'https://drive.google.com/file/d/11eVb84uA4zlBGd8HuRTbpPx35aTTruzV/view?usp=drive_link',
+    title: "Certificate of Experience TechMiracle",
+    year: "2024",
+    issuer: "Tech Miracle",
+    logo: "/assets/images/techmirical-icon.svg",
+    certificateImage: "/assets/images/techmiraclecertificate.png",
+    credentialUrl:
+      "https://drive.google.com/file/d/11eVb84uA4zlBGd8HuRTbpPx35aTTruzV/view?usp=drive_link",
   },
   {
     id: 6,
-    title: 'Graphic Design\nCertificate',
-    year: '2022',
-    issuer: 'DigiSkills',
-    logo: '/assets/images/digiskill-icon.svg',
-    certificateImage: '/assets/images/vu-certificate.png',
-    credentialUrl: 'https://drive.google.com/file/d/1kXeQa7TbglMJna6uyzI4FQhovvGmb6zk/view?usp=drive_link',
+    title: "Graphic Design\nCertificate",
+    year: "2022",
+    issuer: "DigiSkills",
+    logo: "/assets/images/digiskill-icon.svg",
+    certificateImage: "/assets/images/vu-certificate.png",
+    credentialUrl:
+      "https://drive.google.com/file/d/1kXeQa7TbglMJna6uyzI4FQhovvGmb6zk/view?usp=drive_link",
   },
   {
     id: 7,
-    title: 'Certificate of Experience Madrasa tul banat',
-    year: '2023',
-    issuer: 'Madrasa tul Banat',
-    logo: '/assets/images/mtb-icon.svg',
-    certificateImage: '/assets/images/mtb-certificate.png',
-    credentialUrl: 'https://drive.google.com/file/d/1LKTTKWaYoojwbHYflNu0H-qVF0Vimj9r/view?usp=sharing',
+    title: "Certificate of Experience Madrasa tul banat",
+    year: "2023",
+    issuer: "Madrasa tul Banat",
+    logo: "/assets/images/mtb-icon.svg",
+    certificateImage: "/assets/images/mtb-certificate.png",
+    credentialUrl:
+      "https://drive.google.com/file/d/1LKTTKWaYoojwbHYflNu0H-qVF0Vimj9r/view?usp=sharing",
   },
   {
     id: 8,
-    title: 'Experience letter\nVAASEL',
-    year: '2023',
-    issuer: 'VAASEL',
-    logo: '/assets/images/vaasal-icon.svg',
-    certificateImage: '/assets/images/vaasel-certificate.png',
-    credentialUrl: 'https://drive.google.com/file/d/12nZokyGL2aLUNvIlicljdfdDnILP2_uB/view?usp=drive_link',
+    title: "Experience letter\nVAASEL",
+    year: "2023",
+    issuer: "VAASEL",
+    logo: "/assets/images/vaasal-icon.svg",
+    certificateImage: "/assets/images/vaasel-certificate.png",
+    credentialUrl:
+      "https://drive.google.com/file/d/12nZokyGL2aLUNvIlicljdfdDnILP2_uB/view?usp=drive_link",
   },
 ];
 
@@ -102,8 +110,8 @@ export default function Certifications() {
     isDragging.current = true;
     startX.current = e.pageX - container.offsetLeft;
     scrollLeft.current = container.scrollLeft;
-    container.style.cursor = 'grabbing';
-    container.style.userSelect = 'none';
+    container.style.cursor = "grabbing";
+    container.style.userSelect = "none";
   };
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -122,8 +130,8 @@ export default function Certifications() {
     if (!container) return;
 
     isDragging.current = false;
-    container.style.cursor = 'grab';
-    container.style.userSelect = '';
+    container.style.cursor = "grab";
+    container.style.userSelect = "";
   };
 
   const handleMouseLeave = () => {
@@ -131,8 +139,8 @@ export default function Certifications() {
     if (!container) return;
 
     isDragging.current = false;
-    container.style.cursor = 'grab';
-    container.style.userSelect = '';
+    container.style.cursor = "grab";
+    container.style.userSelect = "";
   };
 
   return (
@@ -141,13 +149,12 @@ export default function Certifications() {
         {/* Title */}
         <h2
           className="text-[32px] md:text-5xl lg:text-[60px] font-bold text-[#070707] tracking-[-0.96px] md:tracking-[-1.8px] mb-8 md:mb-12"
-          style={{ fontFamily: 'var(--font-satoshi)' }}
+          style={{ fontFamily: "var(--font-satoshi)" }}
         >
-          Certifications &{' '}
-          <br className="md:hidden" />
+          Certifications & <br className="md:hidden" />
           <span
             className="italic font-bold"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: "var(--font-playfair)" }}
           >
             Achievements
           </span>
@@ -159,8 +166,8 @@ export default function Certifications() {
         ref={scrollContainerRef}
         className="flex gap-4 md:gap-[16px] overflow-x-auto scrollbar-hide pb-6 pt-6 cursor-grab active:cursor-grabbing select-none"
         style={{
-          scrollbarWidth: 'none',
-          msOverflowStyle: 'none',
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
         }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
@@ -173,13 +180,10 @@ export default function Certifications() {
         {certifications.map((cert) => (
           <div
             key={cert.id}
-
-            // className="flex-shrink-0 w-[238.5px] md:w-[500px] lg:w-[577px] h-[264px] md:h-[550px] lg:h-[636px] rounded-[9px] md:rounded-[14px] overflow-hidden relative border-[1.5px] md:border-[5px] border-[#070707] shadow-[0px_0px_16px_1px_rgba(0,0,0,0.4)] md:shadow-[0px_0px_40px_2px_rgba(0,0,0,0.4)]"
-               className="flex-shrink-0 w-[238.5px] md:w-[500px] lg:w-[577px] h-[264px] md:h-[550px] lg:h-[636px] rounded-[9px] md:rounded-[14px] overflow-hidden relative border-[1.5px] md:border-[5px] border-[#070707] shadow-[0px_0px_16px_1px_rgba(0,0,0,0.2)] md:shadow-[0px_0px_40px_2px_rgba(0,0,0,0.2)]"
-
-            // className="flex-shrink-0 w-[238.5px] md:w-[500px] lg:w-[577px] h-[264px] md:h-[550px] lg:h-[636px] rounded-[9px] md:rounded-[14px] overflow-hidden relative border-[1.5px] md:border-[5px] border-[#070707] shadow-[0px_4px_12px_rgba(0,0,0,0.08),0px_12px_30px_rgba(0,0,0,0.12),0px_24px_60px_rgba(0,0,0,0.18)]"
+            className="flex-shrink-0 w-[238.5px] md:w-[500px] lg:w-[577px] h-[264px] md:h-[550px] lg:h-[636px] rounded-[9px] md:rounded-[14px] overflow-hidden relative border-[1.5px] md:border-[5px] border-[#070707] shadow-[0px_0px_16px_1px_rgba(0,0,0,0.2)] md:shadow-[0px_0px_40px_2px_rgba(0,0,0,0.2)]"
             style={{
-              background: 'linear-gradient(to bottom, #000000 0%, #ffffff 100%)',
+              background:
+                "linear-gradient(to bottom, #000000 0%, #ffffff 100%)",
             }}
           >
             {/* Diagonal Stripes Decoration */}
@@ -188,40 +192,44 @@ export default function Certifications() {
               <div
                 className="absolute w-4 md:w-10 h-36 md:h-72 opacity-30"
                 style={{
-                  background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))',
-                  transform: 'rotate(32deg) skewX(12deg)',
-                  left: '20px',
-                  top: '-15px',
+                  background:
+                    "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))",
+                  transform: "rotate(32deg) skewX(12deg)",
+                  left: "20px",
+                  top: "-15px",
                 }}
               />
               {/* Stripe 2 */}
               <div
                 className="absolute w-4 md:w-10 h-36 md:h-72 opacity-30"
                 style={{
-                  background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))',
-                  transform: 'rotate(32deg) skewX(12deg)',
-                  left: '50px',
-                  top: '-10px',
+                  background:
+                    "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))",
+                  transform: "rotate(32deg) skewX(12deg)",
+                  left: "50px",
+                  top: "-10px",
                 }}
               />
               {/* Stripe 3 */}
               <div
                 className="absolute w-4 md:w-10 h-36 md:h-72 opacity-30"
                 style={{
-                  background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))',
-                  transform: 'rotate(32deg) skewX(12deg)',
-                  right: '50px',
-                  top: '-15px',
+                  background:
+                    "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))",
+                  transform: "rotate(32deg) skewX(12deg)",
+                  right: "50px",
+                  top: "-15px",
                 }}
               />
               {/* Stripe 4 */}
               <div
                 className="absolute w-4 md:w-10 h-36 md:h-72 opacity-30"
                 style={{
-                  background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))',
-                  transform: 'rotate(32deg) skewX(12deg)',
-                  right: '20px',
-                  top: '-10px',
+                  background:
+                    "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(147,147,147,0.3))",
+                  transform: "rotate(32deg) skewX(12deg)",
+                  right: "20px",
+                  top: "-10px",
                 }}
               />
             </div>
@@ -256,16 +264,16 @@ export default function Certifications() {
                 {/* Title */}
                 <p
                   className="text-[12px] font-medium text-white leading-tight max-w-[150px]"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                  style={{ fontFamily: "var(--font-satoshi)" }}
                 >
                   {/* {cert.title} */}
-                  
-  {cert.title.split('\n').map((line, i) => (
-    <React.Fragment key={i}>
-      {line}
-      {i < cert.title.split('\n').length - 1 && <br />}
-    </React.Fragment>
-  ))}
+
+                  {cert.title.split("\n").map((line, i) => (
+                    <React.Fragment key={i}>
+                      {line}
+                      {i < cert.title.split("\n").length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
                 </p>
 
                 {/* Arrow Button */}
@@ -318,7 +326,6 @@ export default function Certifications() {
                   fill
                   className="object-contain rounded-sm"
                 />
-                
               </div>
             </div>
 
@@ -340,7 +347,7 @@ export default function Certifications() {
                 {/* Year */}
                 <span
                   className="text-4xl text-white font-normal"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                  style={{ fontFamily: "var(--font-satoshi)" }}
                 >
                   {cert.year}
                 </span>
@@ -375,25 +382,17 @@ export default function Certifications() {
 
               {/* Bottom Content - Desktop */}
               <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
-                {/* Title */}
-                {/* <p
-                  className="text-2xl font-medium text-[#303030] leading-tight max-w-[285px]"
-                  style={{ fontFamily: 'var(--font-satoshi)' }}
+                <p
+                  className="text-[22px] font-medium text-[#303030] leading-tight max-w-[285px]"
+                  style={{ fontFamily: "var(--font-satoshi)" }}
                 >
-                  {cert.title}
-                </p> */}
-
-<p
-  className="text-[22px] font-medium text-[#303030] leading-tight max-w-[285px]"
-  style={{ fontFamily: 'var(--font-satoshi)' }}
->
-  {cert.title.split('\n').map((line, i) => (
-    <React.Fragment key={i}>
-      {line}
-      {i < cert.title.split('\n').length - 1 && <br />}
-    </React.Fragment>
-  ))}
-</p>
+                  {cert.title.split("\n").map((line, i) => (
+                    <React.Fragment key={i}>
+                      {line}
+                      {i < cert.title.split("\n").length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
+                </p>
                 {/* CTA Button */}
                 <a
                   href={cert.credentialUrl}
@@ -407,7 +406,7 @@ export default function Certifications() {
                   {/* Text */}
                   <span
                     className="text-lg font-medium text-white relative z-10 whitespace-nowrap transition-colors duration-500 group-hover:text-[#070707]"
-                    style={{ fontFamily: 'var(--font-satoshi)' }}
+                    style={{ fontFamily: "var(--font-satoshi)" }}
                   >
                     View Credentials
                   </span>

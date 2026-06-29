@@ -9,7 +9,6 @@ interface LogoItem {
   imageHeight: number;
   // mobileWidth: number;
   // mobileHeight: number;
-  
 }
 
 interface StatData {
@@ -41,23 +40,51 @@ const stats: StatData[] = [
 const logoRows: { logos: LogoItem[]; direction: "ltr" | "rtl" }[] = [
   {
     logos: [
-  //     { logo: "/assets/icons/myclients/Logo-Selexi.svg", name: "Selexi", imageWidth: 120, imageHeight: 64,  mobileWidth: 100,
-  // mobileHeight: 26, },
-  //     { logo: "/assets/icons/myclients/Logo-Zaveur.svg", name: "Zaveur", imageWidth: 155, imageHeight: 42, mobileWidth: 100,
-  // mobileHeight: 26, },
-   { logo: "/assets/icons/myclients/Logo-Selexi.svg", name: "Selexi", imageWidth: 120, imageHeight: 64,
- },
-      { logo: "/assets/icons/myclients/Logo-Zaveur.svg", name: "Zaveur", imageWidth: 155, imageHeight: 42,
- },
-      { logo: "/assets/icons/myclients/Logo-Leebai.svg", name: "LeebAI", imageWidth: 145, imageHeight: 50 },
+      //     { logo: "/assets/icons/myclients/Logo-Selexi.svg", name: "Selexi", imageWidth: 120, imageHeight: 64,  mobileWidth: 100,
+      // mobileHeight: 26, },
+      //     { logo: "/assets/icons/myclients/Logo-Zaveur.svg", name: "Zaveur", imageWidth: 155, imageHeight: 42, mobileWidth: 100,
+      // mobileHeight: 26, },
+      {
+        logo: "/assets/icons/myclients/Logo-Selexi.svg",
+        name: "Selexi",
+        imageWidth: 120,
+        imageHeight: 64,
+      },
+      {
+        logo: "/assets/icons/myclients/Logo-Zaveur.svg",
+        name: "Zaveur",
+        imageWidth: 155,
+        imageHeight: 42,
+      },
+      {
+        logo: "/assets/icons/myclients/Logo-Leebai.svg",
+        name: "LeebAI",
+        imageWidth: 145,
+        imageHeight: 50,
+      },
     ],
     direction: "ltr",
   },
   {
     logos: [
-      { logo: "/assets/icons/myclients/Logo-Esculapio.svg", name: "Esculapio", imageWidth: 125, imageHeight: 50 },
-      { logo: "/assets/icons/myclients/Logo-Uloma.svg", name: "ULOMA", imageWidth: 160, imageHeight: 35 },
-      { logo: "/assets/icons/myclients/Logo-Yuniro.svg", name: "Yuniro", imageWidth: 150, imageHeight: 45 },
+      {
+        logo: "/assets/icons/myclients/Logo-Esculapio.svg",
+        name: "Esculapio",
+        imageWidth: 125,
+        imageHeight: 50,
+      },
+      {
+        logo: "/assets/icons/myclients/Logo-Uloma.svg",
+        name: "ULOMA",
+        imageWidth: 160,
+        imageHeight: 35,
+      },
+      {
+        logo: "/assets/icons/myclients/Logo-Yuniro.svg",
+        name: "Yuniro",
+        imageWidth: 150,
+        imageHeight: 45,
+      },
     ],
     direction: "rtl",
   },
@@ -66,70 +93,42 @@ const logoRows: { logos: LogoItem[]; direction: "ltr" | "rtl" }[] = [
 function StatCard({ stat }: { stat: StatData }) {
   return (
     // <div className="bg-white rounded-[14px] h-[120px] md:h-[104px] sm:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col  justify-between align-bottom ">
-     <div className="bg-white rounded-[14px] h-[104px] md:h-[165px] lg:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col  justify-between align-bottom ">
-
-      {/* <h3 className="text-[22px] md:text-[36px] font-bold leading-tight">
-        <span
-          className="text-[#070707]"
-          style={{ fontFamily: "var(--font-satoshi)" }}
-        >
-          {stat.headline}
-        </span>
-        {stat.headlineSuffix && (
-          <span
-            className="text-[#ff805e] font-black"
-            style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
-          >
-            {stat.headlineSuffix}
-          </span>
-        )}
-      </h3> */}
-      {/* <p
-        className="text-[12px] md:text-[14px] font-medium text-[#070707] mt-0.5"
-        style={{ fontFamily: "var(--font-satoshi)" }}
-      >
-        {stat.label}
-      </p>
-      <p
-        className="text-[11px] md:text-[14px] text-[#5f6266] leading-relaxed mt-auto"
-        style={{ fontFamily: "var(--font-satoshi)" }}
-      >
-        {stat.description}
-      </p> */}
+    <div className="bg-white rounded-[14px] h-[104px] md:h-[165px] lg:h-[161px] p-5 border border-dashed border-[#cfd1d4] shadow-[0px_0px_5px_1px_rgba(0,0,0,0.12)] flex flex-col  justify-between align-bottom ">
       <div className="flex flex-row items-center justify-between gap-2 md:flex-col md:items-start">
         <h3 className="text-[22px] md:text-[36px] font-bold leading-tight">
-        <span
-          className="text-[#070707]"
+          <span
+            className="text-[#070707]"
+            style={{ fontFamily: "var(--font-satoshi)" }}
+          >
+            {stat.headline}
+          </span>
+          {stat.headlineSuffix && (
+            <span
+              className="text-[#ff805e] font-black"
+              style={{
+                fontFamily: "var(--font-playfair)",
+                fontStyle: "italic",
+              }}
+            >
+              {stat.headlineSuffix}
+            </span>
+          )}
+        </h3>
+        <p
+          className="text-[12px] md:text-[14px] font-medium text-[#070707]"
           style={{ fontFamily: "var(--font-satoshi)" }}
         >
-          {stat.headline}
-        </span>
-        {stat.headlineSuffix && (
-          <span
-            className="text-[#ff805e] font-black"
-            style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
-          >
-            {stat.headlineSuffix}
-          </span>
-        )}
-      </h3>
-  <p
-    className="text-[12px] md:text-[14px] font-medium text-[#070707]"
-    style={{ fontFamily: "var(--font-satoshi)" }}
-  >
-    {stat.label}
-  </p>
-
- 
-</div>
-<div>
-    <p
-    className="text-[11px] md:text-[14px] text-[#5f6266] leading-relaxed "
-    style={{ fontFamily: "var(--font-satoshi)" }}
-  >
-    {stat.description}
-  </p>
-</div>
+          {stat.label}
+        </p>
+      </div>
+      <div>
+        <p
+          className="text-[11px] md:text-[14px] text-[#5f6266] leading-relaxed "
+          style={{ fontFamily: "var(--font-satoshi)" }}
+        >
+          {stat.description}
+        </p>
+      </div>
     </div>
   );
 }
@@ -147,41 +146,18 @@ function LogoMarquee({
 
   return (
     <div className="overflow-hidden w-full h-[120px] md:h-[161px]">
-      {/* <div
-        className="marquee-track flex gap-[9px] sm:gap[30px] h-full"
+      <div
+        className="marquee-track flex   lg:gap-[9px]  gap-[46px]  h-full lg:w-[200%] w-[310%]  gap-[10px]"
         style={{
-          width: "200%",
           animation: `marquee-${direction} 18s linear infinite`,
         }}
       >
         {track.map((logo, i) => (
           <div
             key={i}
-            className="flex-1 bg-white rounded-[14px] flex items-center justify-center h-full"
+            className="flex-1 lg:bg-white md:bg-white sm-bg-none rounded-[14px] flex items-center justify-center h-full"
           >
-            <Image
-              src={logo.logo}
-              alt={logo.name}
-              width={logo.imageWidth}
-              height={logo.imageHeight}
-              className="object-contain"
-            />
-          </div>
-        ))}
-      </div> */}
-
-      <div
-  className="marquee-track flex   lg:gap-[9px]  gap-[46px]  h-full lg:w-[200%] w-[310%]  gap-[10px]"
-  style={{
-    animation: `marquee-${direction} 18s linear infinite`,
-  }}
->
-  {track.map((logo, i) => (
-    <div
-      key={i}
-      className="flex-1 lg:bg-white md:bg-white sm-bg-none rounded-[14px] flex items-center justify-center h-full"
-    >
-      {/* <Image
+            {/* <Image
         src={logo.logo}
         alt={logo.name}
         width={logo.imageWidth}
@@ -189,23 +165,20 @@ function LogoMarquee({
         className="object-contain w-[120px] h-[60px] lg:w-auto lg:h-auto"
       /> */}
 
-
-    
-
-<Image
-  src={logo.logo}
-  alt={logo.name}
-  width={logo.imageWidth}
-  height={logo.imageHeight}
-  className="object-contain"
-  // style={{
-  //   width: `${logo.mobileWidth}px`,
-  //   height: `${logo.mobileHeight}px`,
-  // }}
-/>
-    </div>
-  ))}
-</div>
+            <Image
+              src={logo.logo}
+              alt={logo.name}
+              width={logo.imageWidth}
+              height={logo.imageHeight}
+              className="object-contain"
+              // style={{
+              //   width: `${logo.mobileWidth}px`,
+              //   height: `${logo.mobileHeight}px`,
+              // }}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -231,7 +204,8 @@ export default function Clients() {
                   className="italic font-bold"
                   style={{ fontFamily: "var(--font-playfair)" }}
                 >
-                  {" "}Clients
+                  {" "}
+                  Clients
                 </span>
               </h2>
               <span
@@ -258,16 +232,18 @@ export default function Clients() {
 
               {/* Rows 2 & 3: Logo marquees scrolling opposite directions */}
               {logoRows.map((row, i) => (
-                <LogoMarquee key={i} logos={row.logos} direction={row.direction} />
+                <LogoMarquee
+                  key={i}
+                  logos={row.logos}
+                  direction={row.direction}
+                />
               ))}
             </div>
           </div>
 
           {/* Right: Process Story Card */}
           {/* <div className="flex items-end justify-end"> */}
-            <div className="flex items-end justify-center lg:justify-end lg:items-end md:items-center md:justify-center">
-
-          
+          <div className="flex items-end justify-center lg:justify-end lg:items-end md:items-center md:justify-center">
             <Story
               slides={[
                 {
