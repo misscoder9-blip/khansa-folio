@@ -5,7 +5,7 @@ import "./globals.css";
 import Header from "@/app/components/sections/Header";
 import Footer from "@/app/components/sections/Footer";
 import ScrollToTop from "@/app/components/ScrollToTop";
-import AnimatedCard from "./components/sections/AnimatedCard";
+// import AnimatedCard from "./components/sections/AnimatedCard";
 
 // Default font - Satoshi
 const satoshi = localFont({
@@ -68,7 +68,7 @@ export default function RootLayout({
       className={`${satoshi.variable} ${craftworkGrotesk.variable} ${playfairDisplay.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-[#F8F9FA] transition-colors antialiased" style={{ fontFamily: 'var(--font-satoshi)' }}>
-        <AnimatedCard/>
+        {/* <AnimatedCard/> */}
         <ScrollToTop />
         <Header />
         <main className="flex-1">{children}</main>
