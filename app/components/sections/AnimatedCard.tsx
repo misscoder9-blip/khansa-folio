@@ -9,7 +9,6 @@ export default function AnimatedCard() {
 
   const pathname = usePathname();
 
-  // Only show on these 3 pages
   const allowedPages = ["/", "/about", "/work"];
   const isAllowed = allowedPages.includes(pathname);
 
@@ -40,16 +39,15 @@ export default function AnimatedCard() {
     };
   }, [pathname, isAllowed]);
 
-  // Don't render at all on other pages
   if (!isAllowed) return null;
 
   return (
-    <>
-      <div className="hidden lg:block"
+    <div className="hidden lg:block">
+      <div
         style={{
           position: "fixed",
           top: "74px",
-          left: "700px",
+          right: "max(60px, calc((100vw - 1440px) / 2 + 60px))",
           width: "514px",
           height: "279px",
           background: "#FFFFFF",
@@ -130,14 +128,14 @@ export default function AnimatedCard() {
             </div>
 
             {/* Khansa text at bottom center */}
-            <p className="relative z-10 w-full text-center pb-3 font-[Satoshi] font-bold  text-[24px] leading-[100%] tracking-[-0.03em] text-[#0A0A0A]">
-              Kha<span className="font-['Playfair_Display'] font-bold italic">nsa.</span>
+            <p className="relative z-10 w-full text-center pb-3 font-['Playfair_Display',serif] font-bold italic text-[24px] leading-[100%] tracking-[-0.03em] text-[#0A0A0A]">
+              Khansa.
             </p>
 
           </div>
 
         </div>
       </div>
-    </>
+    </div>
   );
 }
