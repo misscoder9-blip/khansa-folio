@@ -25,17 +25,8 @@ export default function StatsCard({
   return (
     <Card className="bg-[#070707] text-white overflow-hidden h-full">
       <div className="p-6 md:p-8 h-full flex flex-col justify-between">
-        {/* Top Stats with dotted divider */}
-        {/* <div className="relative flex items-center justify-between"> */}
-        {/* 1st change */}
-        {/* <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-0"> */}
-        {/* <div className="relative flex flex-col lg:flex-row items-center lg:items-center justify-between gap-4 lg:gap-0"> */}
-          {/* Years of Experience */}
-          <div className="relative flex  flex-row items-center lg:items-center justify-between gap-4 lg:gap-0">
-          {/* <div className="flex flex-col gap-3"> */}
-          {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left"> */}
-          {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left"> */}
-          {/* <div className="flex flex-col gap-3 w-full lg:w-auto items-center lg:items-start text-center lg:text-left"> */}
+        {/* Years of Experience */}
+        <div className="relative flex  flex-row items-center lg:items-center justify-between gap-4 lg:gap-0">
           <div className="flex flex-col gap-3 w-full lg:w-auto items-start  text-start text-left sm:pl-3 lg:pl-2 pb-3">
             <p
               className="text-[36px] md:text-[48px] font-black italic text-[#ff805e] leading-normal tracking-[-1.08px] md:tracking-[-1.44px]"
@@ -57,21 +48,16 @@ export default function StatsCard({
                 </span>
               </p>
               {/* <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Designing thoughtful and scalable digital experiences.</p> */}
-                <p className=" hidden lg:block  text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Designing thoughtful and scalable digital experiences.</p> 
-
+              <p className=" hidden lg:block  text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">
+                Designing thoughtful and scalable digital experiences.
+              </p>
             </div>
           </div>
 
-          {/* Vertical dotted divider */}
-          {/* <div className="h-[80px] md:h-[107px] w-0 border-l border-dotted border-gray-600"></div> */}
-          {/* <div className="hidden md:block h-[107px] w-0 border-l border-dotted border-gray-600"></div> */}
-          {/* <div className="w-full md:w-0 h-0 md:h-[107px] border-t md:border-t-0 md:border-l border-dotted border-gray-600"></div> */}
-          {/* <div className="w-full md:w-0 h-[5px] md:h-[107px] border-t md:border-t-0 md:border-l border-dotted border-gray-600"></div> */}
           <div className="h-[80px] md:h-[107px] w-0 border-l border-dotted border-gray-600"></div>
 
           {/* Projects Completed */}
-          {/* <div className="flex flex-col gap-3 pl-5 md:pl-6"> */}
-          {/* <div className="flex flex-col gap-3 w-full md:w-auto items-center md:items-start text-center md:text-left pl-0 md:pl-6"> */}
+
           <div className="flex flex-col gap-3 w-full md:w-auto  items-start  text-start  text-left lg:pl-6 sm:pl-3 sm: pb-3">
             <p
               className="text-[36px] md:text-[48px] font-black italic text-[#ff805e] text-start  text-left leading-normal tracking-[-1.08px] md:tracking-[-1.44px]"
@@ -94,8 +80,8 @@ export default function StatsCard({
               </p>
               {/* <p className="text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">Across websites, mobile apps, dashboards, and platforms.</p> */}
               <p className="hidden lg:block text-[12px] text-[#A5A9AE] w-[200px] md:w-[250px]">
-  Across websites, mobile apps, dashboards, <br /> and platforms.
-</p>
+                Across websites, mobile apps, dashboards, <br /> and platforms.
+              </p>
             </div>
           </div>
         </div>
