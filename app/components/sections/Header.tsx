@@ -7,6 +7,7 @@ import Link from "next/link";
 // import SunIcon from "@/app/components/icons/SunIcon";
 import PlusIcon from "@/app/components/icons/PlusIcon";
 import CloseIcon from "@/app/components/icons/CloseIcon";
+import AnimatedCard from "./AnimatedCard";
 
 // Nav item component with hover animation
 function NavItem({
@@ -68,6 +69,8 @@ export default function Header() {
 
   return (
     <header className="relative z-50 px-4 sm:px-6 lg:px-[60px] py-3">
+      <AnimatedCard/>
+
       <nav className="max-w-[1440px] mx-auto flex items-center justify-between gap-4">
         {/* Left: Profile Picture with expanding Khansafolio */}
         <Link
@@ -163,6 +166,7 @@ export default function Header() {
             )}
           </button>
         </div>
+        {/* <AnimatedCard/> */}
       </nav>
 
       {/* Mobile/Dropdown Menu */}
